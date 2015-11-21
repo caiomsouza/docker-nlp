@@ -1,0 +1,21 @@
+#!/bin/bash
+OPT=$1
+INSTALL_DIR=`pwd`
+PDI_BUILD=${INSTALL_DIR}/pdi
+BISERVER_BUILD=${INSTALL_DIR}/biserver
+RUN_STACK="docker-compose up -d"
+
+
+
+# Docker Installer
+sudo wget https://raw.githubusercontent.com/it4biz/ubuntu-docker-installer/master/ubuntu-docker-installer.sh
+sudo sh ubuntu-docker-installer.sh
+
+#NLTK Installer
+
+
+cd ${PDI_BUILD} && sh ${PDI_BUILD}/build.sh
+cd ${BISERVER_BUILD} && sh ${BISERVER_BUILD}/build.sh
+cd ${INSTALL_DIR}
+
+
