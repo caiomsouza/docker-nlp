@@ -22,3 +22,5 @@ sudo sh easy_install.sh
 ###NLTK documentation
 http://www.nltk.org/install.html
 
+###1. Language Processing and Python
+http://www.nltk.org/book/ch01.html
