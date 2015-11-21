@@ -1,8 +1,8 @@
 FROM python:2.7.8
 MAINTAINER Caio Moreno de Souza "caiomsouza@gmail.com"
 
-RUN pip install -U nltk
-RUN pip install -U numpy
+RUN sudo pip install -U nltk
+RUN sudo pip install -U numpy
 
 
 #ENV CORPORA brown
