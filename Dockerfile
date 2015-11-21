@@ -11,6 +11,7 @@ RUN echo $TIMEZONE > /etc/timezone && \
     dpkg-reconfigure -f noninteractive tzdata
 
 # Install NLTK    
+RUN cd /opt
 RUN git clone https://github.com/caiomsouza/docker-nltk.git
 RUN cd docker-nltk
 RUN sh easy_install.sh
