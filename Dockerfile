@@ -8,3 +8,4 @@ RUN sudo pip install -U numpy
 #ENV CORPORA brown
 #CMD python -m nltk.downloader $CORPORA; python
 
+EXPOSE 80
