@@ -3,8 +3,15 @@ MAINTAINER Caio Moreno de Souza "caiomsouza@gmail.com"
 
 #ENV NPL_HOME /opt/npl_home
 
+
 USER root
 
+# Define timezone
+ENV TIMEZONE "America/Sao_Paulo"
+RUN echo $TIMEZONE > /etc/timezone && \
+    dpkg-reconfigure -f noninteractive tzdata
+
+# Install NLTK    
 RUN git clone https://github.com/caiomsouza/docker-nltk.git
 RUN cd docker-nltk
 RUN sudo sh easy_install.sh
@@ -14,11 +21,6 @@ RUN sudo sh easy_install.sh
 #RUN pip install -U nltk
 #RUN pip install -U numpy
 #RUN apt-get install -y python-scipy
-
-# Define timezone
-ENV TIMEZONE "America/Sao_Paulo"
-RUN echo $TIMEZONE > /etc/timezone && \
-    dpkg-reconfigure -f noninteractive tzdata
 
 #RUN ${NPL_HOME}
 
