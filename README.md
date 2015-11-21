@@ -11,5 +11,14 @@ sudo wget https://raw.githubusercontent.com/it4biz/ubuntu-docker-installer/maste
 sudo sh ubuntu-docker-installer.sh
 ```
 
+###Easy Install of Docker-nltk
+```
+git clone https://github.com/caiomsouza/docker-nltk.git
+cd docker-nltk
+sudo sh easy_install.sh
+```
 
+
+###NLTK documentation
+http://www.nltk.org/install.html
 
