@@ -3,7 +3,6 @@ MAINTAINER Caio Moreno de Souza "caiomsouza@gmail.com"
 
 #ENV NPL_HOME /opt/npl_home
 
-
 USER root
 
 # Define timezone
@@ -14,7 +13,7 @@ RUN echo $TIMEZONE > /etc/timezone && \
 # Install NLTK    
 RUN git clone https://github.com/caiomsouza/docker-nltk.git
 RUN cd docker-nltk
-RUN sudo sh easy_install.sh
+RUN sh easy_install.sh
 
 
 
