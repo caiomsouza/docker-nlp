@@ -1,2 +1,2 @@
-# docker-nlp
-Docker (Natural language processing (NLP)
+# docker-nltk
+Docker (Natural language processing (NLP) using NLTK.
