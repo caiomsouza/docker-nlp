@@ -10,7 +10,8 @@ ENV TIMEZONE "America/Sao_Paulo"
 RUN echo $TIMEZONE > /etc/timezone && \
     dpkg-reconfigure -f noninteractive tzdata
 
-
+# Install wget    
+RUN apt-get -y install wget git
 
 WORKDIR /opt
 
