@@ -6,6 +6,8 @@
 #BISERVER_BUILD=${INSTALL_DIR}/biserver
 #RUN_STACK="docker-compose up -d"
 
+sudo apt-get -y install wget git
+
 # Docker Installer
 sudo wget https://raw.githubusercontent.com/it4biz/ubuntu-docker-installer/master/ubuntu-docker-installer.sh
 sudo sh ubuntu-docker-installer.sh
